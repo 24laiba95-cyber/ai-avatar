@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   container.innerHTML = `
     <div style="position:fixed;bottom:20px;right:120px;width:260px;z-index:9999;cursor:pointer;text-align:center;">
       <video id="avatar-video" muted loop autoplay playsinline style="width:100%;border-radius:15px;transition:transform 0.3s ease;box-shadow:0 10px 25px rgba(0,0,0,0.2);">
-        <source src="YOUR_VIDEO_LINK_HERE" type="video/mp4">
+        <source src="https://assets.cdn.filesafe.space/1YLyTJHGfc98hfoM9Hsz/media/69a0762c9185ffca0c4c6587.mp4" type="video/mp4">
       </video>
       <div id="ai-label" style="margin-top:6px;font-weight:bold;">Click to Talk</div>
     </div>
@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("avatar-video");
   const label = document.getElementById("ai-label");
 
-  const BOT_ID = "YOUR_BOT_ID";
-  const API_KEY = "YOUR_API_KEY";
+  const BOT_ID = "<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/02/26/08/20260226085038-G3HUPUZH.js" defer></script>";
+  const API_KEY = "bp_bak_6yfil_P_yaylwB_wEzsw1-Cw33uaPJ-R9GsK";
 
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const recognition = new SpeechRecognition();
